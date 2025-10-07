@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Ziggy - Smart Communication for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="ziggy-logo.png" alt="Ziggy Logo" class="logo-img">
+                <span class="logo-text">Ziggy</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#manage">Manage Account</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="login-btn">Log in</button>
+                <div class="country-selector">
+                    <span>United States | USD $</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about Ziggy? Need help with your order? Want to share feedback? We're here to help!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <h3>Email Us</h3>
+                                <p>hello@ziggy.com</p>
+                                <p>We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-info">
+                                <h3>Live Chat</h3>
+                                <p>Available Monday-Friday, 9AM-6PM PST</p>
+                                <p>Click the chat icon in the bottom right</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-info">
+                                <h3>Call Us</h3>
+                                <p>1-800-ZIGGY-01</p>
+                                <p>Monday-Friday, 9AM-6PM PST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Question</option>
+                                <option value="order">Order Support</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="press">Press Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does Ziggy work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ziggy is a smart communication device that connects to your home WiFi. Parents use our companion app to manage approved contacts and call times. Kids can then make voice calls to approved contacts without any apps, games, or internet distractions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is Ziggy safe for kids?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Ziggy is designed with child safety as the top priority. Only parent-approved contacts can call your child, and you can set quiet hours and Do Not Disturb times. There are no apps, games, or internet browsing capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the difference between Ziggy and Ziggy Flashback?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Both devices have the same core functionality and safety features. Ziggy has a modern design, while Ziggy Flashback has a retro-inspired look that parents will remember from their childhood. The choice is purely aesthetic!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need the Family Plan to use Ziggy?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! Ziggy-to-Ziggy calling is always free. The Family Plan ($9.99/month) is only needed if you want your child to call regular phone numbers like grandparents' landlines or parents' cell phones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When will Ziggy be available?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're currently in the final development phase and expect to begin shipping in Q2 2024. Pre-orders are open now, and you'll receive regular updates on our progress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title">Follow Our Journey</h2>
+            <p class="section-subtitle">Stay updated on Ziggy development and join our community</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <div class="social-icon">📷</div>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">🐦</div>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">📘</div>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <div class="social-icon">📺</div>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="ziggy-logo.png" alt="Ziggy Logo" class="footer-logo-img">
+                    <span>Ziggy</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Ziggy</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="#manage">Manage Account</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#instagram">Instagram</a></li>
+                            <li><a href="#press">Press</a></li>
+                            <li><a href="#join">Join Us</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                            <li><a href="#refund">Refund and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ziggy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const toggle = question.querySelector('.faq-toggle');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('.faq-toggle').textContent = '+';
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    toggle.textContent = '-';
+                } else {
+                    answer.style.maxHeight = null;
+                    toggle.textContent = '+';
+                }
+            });
+        });
+        
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-list a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
