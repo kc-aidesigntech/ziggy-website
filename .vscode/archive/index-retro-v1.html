@@ -708,14 +708,14 @@
         const body = document.querySelector('body');
 
         // Load saved theme
-        const savedTheme = localStorage.getItem('ziggy-theme') || 'orange';
+        const savedTheme = localStorage.getItem('ziggy-retro-theme') || 'orange';
         body.className = `theme-${savedTheme}`;
 
         themeButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const theme = button.dataset.theme;
                 body.className = `theme-${theme}`;
-                localStorage.setItem('ziggy-theme', theme);
+                localStorage.setItem('ziggy-retro-theme', theme);
             });
         });
     </script>
