@@ -72,10 +72,16 @@ ziggy-website/
 ├── order.html              # Order page
 ├── contact.html            # Contact page
 ├── styles.css              # Main stylesheet
-├── ziggy-logo.svg          # Ziggy logo
-├── C2 Ziggy.png           # Main product image
-├── ziggy-product-1.svg     # Ziggy device image
-├── ziggy-product-2.svg     # Ziggy Flashback image
+├── assets/
+│   └── images/             # Image assets folder
+│       ├── ziggy-logo.png  # Ziggy logo
+│       ├── ziggy-logo.svg  # Ziggy logo (SVG)
+│       ├── C2 Ziggy.png    # Main product image
+│       ├── C2 Ziggy back.png # Product back image
+│       ├── C2-Ziggy-transparent-w-logo.png # Transparent logo version
+│       ├── ziggy-product-1.svg # Ziggy device image
+│       ├── ziggy-product-2.svg # Ziggy Flashback image
+│       └── Gemini_Generated_Image_*.png # Generated images
 └── README.md               # This file
 ```
 
