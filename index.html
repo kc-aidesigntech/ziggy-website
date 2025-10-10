@@ -180,9 +180,19 @@
         /* Hero Section */
         .hero {
             position: relative;
-            text-align: center;
             padding: 80px 20px 120px;
             overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text {
+            text-align: center;
         }
 
         .hero h1 {
@@ -203,6 +213,42 @@
             flex-direction: column;
             gap: 16px;
             align-items: center;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            min-height: 400px;
+        }
+
+        .theme-product-image {
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+            transform: scale(0.95);
+        }
+
+        .theme-orange .theme-product-image.orange-product {
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+        }
+
+        .theme-pink .theme-product-image.pink-product {
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+        }
+
+        .theme-teal .theme-product-image.teal-product {
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
         }
 
         /* Sections */
@@ -459,6 +505,18 @@
                 font-size: 72px;
             }
 
+            .hero-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-text {
+                text-align: left;
+            }
+
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+
             .features-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -541,15 +599,24 @@
         <!-- Hero Section -->
         <section class="hero squiggle-section">
             <div class="container">
-                <h1 class="text-main">
-                    Say <span class="text-accent">"What's Up!"</span> to <br/> Awesome Chatter!
-                </h1>
-                <p>
-                    The totally rad, screen-free phone that lets kids call family and friends with just their voice. No boring stuff. No weird calls. Just, like, a ton of fun!
-                </p>
-                <div class="hero-buttons">
-                    <a href="#how-it-works" class="btn btn-alt">How's it Work?</a>
-                    <a href="#shop" class="btn btn-main">Get a Ziggy!</a>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="text-main">
+                            Say <span class="text-accent">"What's Up!"</span> to <br/> Awesome Chatter!
+                        </h1>
+                        <p>
+                            The totally rad, screen-free phone that lets kids call family and friends with just their voice. No boring stuff. No weird calls. Just, like, a ton of fun!
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#how-it-works" class="btn btn-alt">How's it Work?</a>
+                            <a href="#shop" class="btn btn-main">Get a Ziggy!</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/Cream Ziggy.png" alt="Cream Ziggy Phone" class="theme-product-image orange-product">
+                        <img src="assets/images/Pink Ziggy.png" alt="Pink Ziggy Phone" class="theme-product-image pink-product">
+                        <img src="assets/images/Green Ziggy.png" alt="Green Ziggy Phone" class="theme-product-image teal-product">
+                    </div>
                 </div>
             </div>
         </section>
